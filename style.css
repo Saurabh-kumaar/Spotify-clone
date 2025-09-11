@@ -301,7 +301,29 @@ a {
     margin-top: -6px;
 }
 
+/* responsive  */
 
+/* Tablet */
+@media (max-width: 992px) {
+  .sidebar { width: 25%; }
+  .main-content { width: 75%; }
+  .card { width: 45%; }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .sidebar { display: none; }
+  .main-content { width: 100%; padding: 10px; }
+  .card { width: 100%; margin-bottom: 15px; }
+  h1,h2,h3 { font-size: 1.2rem; }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+  .navbar { flex-direction: column; gap: 10px; }
+  img { max-width: 100%; height: auto; }
+  p { font-size: 0.9rem; }
+}
 
 
 
