@@ -326,6 +326,42 @@ a {
 }
 
 
+/* ====================================  */
+
+
+/* Allow scrolling */
+body {
+  overflow-x: hidden;   /* prevent horizontal scroll */
+  overflow-y: auto;     /* allow vertical scroll */
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .sidebar { width: 220px; }
+  .main-content { width: calc(100% - 220px); }
+  .card { width: 45%; }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .sidebar { display: none; }
+  .main { flex-direction: column; }
+  .main-content { width: 100%; padding: 10px; }
+  .cards-container { justify-content: center; }
+  .card { width: 90%; margin: 10px auto; }
+  h1,h2,h3 { font-size: 1.2rem; }
+  .sticky-nav { flex-wrap: wrap; gap: 10px; }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+  .sticky-nav { flex-direction: column; align-items: flex-start; }
+  .card { width: 100%; }
+  img { max-width: 100%; height: auto; }
+  p { font-size: 0.9rem; }
+  .music-player { flex-direction: column; height: auto; padding: 10px; }
+  .player { width: 100%; margin: 10px 0; }
+}
 
 
 
